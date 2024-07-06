@@ -1,0 +1,225 @@
+You are tasked with creating a console-based Java application that serves as a Factorial Calculator. 
+
+
+
+The application should provide a text-based menu with the following options:
+
+
+
+
+
+Choice 1 - Calculate Factorial: Given an integer n, calculate the factorial of n. The factorial of a non-negative integer n is the product of all positive integers less than or equal to n.
+Choice 2 - Factorial Sequence: Given an integer n, print the factorial of every number from 1 to n.
+Choice 3 - Factorial Sum: Given an integer n, calculate the sum of the factorials of all numbers from 1 to n.
+Choice 4 - Factorial Division: Given two integers m and n, calculate the result of m! / n! (division of m factorial by n factorial).
+Choice 5 - Exit: The user should be able to exit the application.
+
+
+The main method should display the menu to the user with the above options, and depending on the user's choice, call the respective functionality.
+
+
+
+Console Interaction:
+
+
+
+At startup, the program should print the menu of operations. After each operation, the menu should be displayed again, giving the user the ability to choose the next operation or exit.
+
+
+
+If the user selects an option from 1 to 4, prompt the user to enter the necessary data and display the result. If the user selects option 5, print the message "Goodbye!" and exit the application. 
+
+
+
+If the user selects a choice other than the five choices given then provide the message "Invalid choice. Please select a valid option." to the user. Ensure that any input errors are handled gracefully with appropriate feedback to the user.
+
+
+
+Your task is to complete the following file:
+
+
+
+
+
+./src/main/java/FactorialCalculatorApp.java
+
+
+Sample Input & Output:
+
+
+
+Menu:
+
+
+
+1. Calculate Factorial
+
+2. Factorial Sequence
+
+3. Factorial Sum
+
+4. Factorial Division
+
+5. Exit
+
+
+
+Enter your choice: 1
+
+Enter an integer: 5
+
+
+
+Factorial of 5 is: 120
+
+
+
+Menu:
+
+1. Calculate Factorial
+
+2. Factorial Sequence
+
+3. Factorial Sum
+
+4. Factorial Division
+
+5. Exit
+
+
+
+Enter your choice: 2
+
+Enter an integer: 5
+
+Factorial of 1 is: 1
+
+Factorial of 2 is: 2
+
+Factorial of 3 is: 6
+
+Factorial of 4 is: 24
+
+Factorial of 5 is: 120
+
+
+
+Menu:
+
+
+
+1. Calculate Factorial
+
+2. Factorial Sequence
+
+3. Factorial Sum
+
+4. Factorial Division
+
+5. Exit
+
+
+
+Enter your choice: 3
+
+Enter an integer: 6
+
+
+
+Sum of factorials up to 6 is: 873
+
+
+
+Menu:
+
+
+
+1. Calculate Factorial
+
+2. Factorial Sequence
+
+3. Factorial Sum
+
+4. Factorial Division
+
+5. Exit
+
+
+
+Enter your choice: 3
+
+Enter an integer: 8
+
+
+
+Sum of factorials up to 8 is: 46233
+
+
+
+Menu:
+
+
+
+1. Calculate Factorial
+
+2. Factorial Sequence
+
+3. Factorial Sum
+
+4. Factorial Division
+
+5. Exit
+
+
+
+Enter your choice: 4
+
+
+
+Enter the first integer (m): 8
+
+Enter the second integer (n): 7
+
+8! / 7! = 8.0
+
+
+
+Menu:
+
+
+
+1. Calculate Factorial
+
+2. Factorial Sequence
+
+3. Factorial Sum
+
+4. Factorial Division
+
+5. Exit
+
+
+
+Enter your choice: 5
+
+
+
+Goodbye!
+
+
+
+
+
+
+
+Testing & Submitting your code:
+
+
+
+Step 1: Click on the WeCP Projects Button shown below.
+
+﻿ 
+
+Step 2: Click on Test & Submit app button to test your code. You will receive a congratulations message upon successful completion of the task.
+
+Step 3: Click on Run app button to execute your java code.

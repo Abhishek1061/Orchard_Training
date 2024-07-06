@@ -1,0 +1,89 @@
+Create a simple "LibraryBook" program that uses access specifiers to manage data. Your program should demonstrate the use of public, private, and protected access specifiers.
+
+
+
+The program should consist of the following two classes: 
+
+
+
+1.LibraryBook Class: This class should contain the following fields and methods:
+
+  	a. bookTitle: A private field of type String.
+
+  	b. bookAuthor: A private field of type String.
+
+  	c. publishYear: A private field of type int.
+
+  	d. isAvailable: A private field of type boolean.
+
+  	e. LibraryBook(): A public constructor that accepts the book title, author, and publishing year.
+
+  	f. getBookTitle(): A public method that returns the book title.
+
+  	g. getBookAuthor(): A public method that returns the book author.
+
+  	h. getPublishYear(): A public method that returns the book's publishing year.
+
+  	i. checkAvailability(): A public method that returns the book's availability status.
+
+  	j. borrowBook(): A public method that changes the book's availability status to false.
+
+  	k. returnBook(): A public method that changes the book's availability status to true.
+
+
+
+2.Main Class: In your main method, create a few instances of the LibraryBook class and demonstrate the borrowing and returning of books.
+
+
+
+Your task is to complete the following files:
+
+
+
+./src/main/java/LibraryBook.java
+./src/main/java/LibraryBookApplication.java
+
+
+Sample Input and Output:
+
+
+
+Book 1 Title: The Great Gatsby
+
+Book 1 Author: F. Scott Fitzgerald
+
+Book 1 Publish year: 1925
+
+Book 1 availability: true
+
+Book 1 availability: false
+
+Book 1 availability: true
+
+
+
+Sample Input and Output Screenshot:
+
+
+
+
+
+
+
+Note: 
+
+  1. You should name the fields and methods exactly as provided above.
+
+
+
+Testing & Submitting your code:
+
+
+
+Step 1: Click on the WeCP Projects Button shown below.
+
+﻿ 
+
+Step 2: Click on Test & Submit app button to test your code. You will receive a congratulations message upon successful completion of the task.
+
+Step 3: Click on Run app button to execute your java code.
