@@ -1,0 +1,78 @@
+1. findById
+Method: Optional<T> findById(ID id);
+JPQL: SELECT t FROM Entity t WHERE t.id = :id
+
+2. findAll
+Method: List<T> findAll();
+JPQL: SELECT t FROM Entity t
+
+3. findAllById
+Method: List<T> findAllById(Iterable<ID> ids);
+JPQL: SELECT t FROM Entity t WHERE t.id IN :ids
+
+4. findByName
+Method: List<T> findByName(String name);
+JPQL: SELECT t FROM Entity t WHERE t.name = :name
+
+5. findByAgeGreaterThan
+Method: List<T> findByAgeGreaterThan(Integer age);
+JPQL: SELECT t FROM Entity t WHERE t.age > :age
+
+6. findByAgeBetween
+Method: List<T> findByAgeBetween(Integer startAge, Integer endAge);
+JPQL: SELECT t FROM Entity t WHERE t.age BETWEEN :startAge AND :endAge
+
+7. findByLastNameAndFirstName
+Method: List<T> findByLastNameAndFirstName(String lastName, String firstName);
+JPQL: SELECT t FROM Entity t WHERE t.lastName = :lastName AND t.firstName = :firstName
+
+8. findByEmailOrPhoneNumber
+Method: List<T> findByEmailOrPhoneNumber(String email, String phoneNumber);
+JPQL: SELECT t FROM Entity t WHERE t.email = :email OR t.phoneNumber = :phoneNumber
+
+9. findByCreatedAtBefore
+Method: List<T> findByCreatedAtBefore(Date date);
+JPQL: SELECT t FROM Entity t WHERE t.createdAt < :date
+
+10. findByStatus
+Method: List<T> findByStatus(Status status);
+JPQL: SELECT t FROM Entity t WHERE t.status = :status
+
+11. findByActiveTrue
+Method: List<T> findByActiveTrue();
+JPQL: SELECT t FROM Entity t WHERE t.active = true
+
+12. findByActiveFalse
+Method: List<T> findByActiveFalse();
+JPQL: SELECT t FROM Entity t WHERE t.active = false
+
+13. findByNameLike
+Method: List<T> findByNameLike(String pattern);
+JPQL: SELECT t FROM Entity t WHERE t.name LIKE :pattern
+
+14. findTopByOrderByAgeDesc
+Method: T findTopByOrderByAgeDesc();
+JPQL: SELECT t FROM Entity t ORDER BY t.age DESC
+
+
+
+15. findByDepartmentName
+Method: List<T> findByDepartmentName(String departmentName);
+JPQL: SELECT t FROM Entity t JOIN t.department d WHERE d.name = :departmentName
+
+16. findByAddressCity
+Method: List<T> findByAddressCity(String city);
+JPQL: SELECT t FROM Entity t JOIN t.address a WHERE a.city = :city
+
+17. findByAgeIn
+Method: List<T> findByAgeIn(Collection<Integer> ages);
+JPQL: SELECT t FROM Entity t WHERE t.age IN :ages
+
+18. findByAgeNotIn
+Method: List<T> findByAgeNotIn(Collection<Integer> ages);
+JPQL: SELECT t FROM Entity t WHERE t.age NOT IN :ages
+
+19. findByLastNameIgnoreCase
+Method: List<T> findByLastNameIgnoreCase(String lastName);
+JPQL: SELECT t FROM Entity t WHERE LOWER(t.lastName) = LOWER(:lastName)
+
